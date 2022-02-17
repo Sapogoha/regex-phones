@@ -7,6 +7,6 @@ test.each([
   ['86 000 000 0000', '+860000000000'],
   ['+90(000)-000-00-00', '+900000000000'],
   ['+380 00 0000000', '+380000000000'],
-])('testing validatePhoneNumber function', (phone, result) => {
+])('testing validatePhoneNumber function with param %s', (phone, result) => {
   expect(validatePhoneNumber(phone)).toBe(result);
 });
